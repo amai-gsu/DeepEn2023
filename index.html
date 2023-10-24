@@ -196,24 +196,18 @@
 
 <section class="hero is-light is-small">
   <div class="columns is-vcentered interpolation-panel">
-    <div class="column is-3 has-text-centered">
+    <div class="column is-12 has-text-centered"> <!-- Change the column size to 12 to occupy the full width -->
       <div class="centered-image-container">
         <img src="./static/images/figure1.png"
              class="interpolation-image"
-             alt="Interpolate start reference image"/>
+             alt="Interpolate start reference image"
+             style="width: 100%; max-width: 100%;" /> <!-- Add inline style to set width to 100% -->
       </div>
       <p> </p>
     </div>
   </div>
 </section>
 
-<style>
-  .centered-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
 
 
 <section class="section">
