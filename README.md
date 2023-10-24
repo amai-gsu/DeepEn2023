@@ -1,16 +1,18 @@
-# Nerfies
+# Unveiling Energy Efficiency in Deep Learning
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This website template was borrowed from [Nerfies](https://nerfies.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find our paper and dataset useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@inproceedings{tu2023energy,
+  author    = {Tu, Xiaolong and Mallik, Anik and Chen, Dawei and Han, Kyungtae and Altintas, Onur and Wang, Haoxin and Xie, Jiang},
+  title     = {Unveiling Energy Efficiency in Deep Learning: Measurement, Prediction, and Scoring across Edge Devices},
+  booktitle = {Proc. The Eighth ACM/IEEE Symposium on Edge Computing (SEC '23)},
+  pages     = {1--14},
+  year      = {2023},
 }
 ```
 
-# Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+# ACKNOWLEDGMENTS
+
+This work was supported by funds from Toyota Motor North America and by the US National Science Foundation (NSF) under Grant No. 1910667, 1910891, and 2025284.
