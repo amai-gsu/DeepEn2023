@@ -1,7 +1,5 @@
 # Unveiling Energy Efficiency in Deep Learning
 
-This website template was borrowed from [Nerfies](https://nerfies.github.io).
-
 If you find our paper and dataset useful for your work please cite:
 ```
 @inproceedings{tu2023energy,
@@ -16,3 +14,5 @@ If you find our paper and dataset useful for your work please cite:
 # ACKNOWLEDGMENTS
 
 This work was supported by funds from Toyota Motor North America and by the US National Science Foundation (NSF) under Grant No. 1910667, 1910891, and 2025284.
+
+This website template was borrowed from [Nerfies](https://nerfies.github.io).
