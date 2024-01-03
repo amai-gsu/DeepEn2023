@@ -24,20 +24,34 @@
             e.preventDefault();
 
             // 检查所有字段是否已填写
-            var name = document.forms["surveyForm"]["Name"].value;
-            var email = document.forms["surveyForm"]["Email"].value;
-            var organization = document.forms["surveyForm"]["Organization"].value;
-            var reason = document.forms["surveyForm"]["Reason"].value;
+            var formData = new FormData(document.getElementById('surveyForm'));
+            var isFormComplete = true;
 
-            if (name == "" || email == "" || organization == "" || reason == "") {
-                alert("All fields must be filled out");
-                return false;
+            for (var [key, value] of formData.entries()) {
+                if (value.trim() === '') {
+                    alert(key + ' is required');
+                    isFormComplete = false;
+                    break;
+                }
             }
 
-            // TODO: 在这里处理调查响应（例如，发送到服务器）
-
-            // 跳转到下载页面
-            window.location.href = 'download-link.html';
+            if (isFormComplete) {
+                // 发送数据到服务器
+                fetch('/submit-survey', {
+                    method: 'POST',
+                    body: formData
+                }).then(response => {
+                    if (response.ok) {
+                        // 成功后跳转到下载页面
+                        window.location.href = 'download-link.html';
+                    } else {
+                        alert('Failed to submit survey');
+                    }
+                }).catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred');
+                });
+            }
         });
     </script>
 </body>
