@@ -4,7 +4,7 @@ from googleapiclient.discovery import build
 def update_sheet(question1, question2, question3, question4):
     # 使用你下载的密钥文件
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-    SERVICE_ACCOUNT_FILE = '/Users/xiaolong/Documents/GitHub/DeepEn2023/user-survery-c8d5eb1575e5.json'
+    SERVICE_ACCOUNT_FILE = '/Users/xiaolong/work/DeepEn_web/user-survery-c8d5eb1575e5.json'
 
     credentials = Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
