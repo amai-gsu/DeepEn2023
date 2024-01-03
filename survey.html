@@ -1,0 +1,25 @@
+<!-- survey.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 头部信息 -->
+</head>
+<body>
+    <form id="surveyForm">
+        <!-- 添加你的调查问题 -->
+        <p>Question 1: <input type="text" name="question1"></p>
+        <p>Question 2: <input type="text" name="question2"></p>
+        <!-- 更多问题... -->
+        <button type="submit">Submit Survey</button>
+    </form>
+
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // TODO: 在这里处理调查响应（例如，发送到服务器）
+            // 跳转到下载页面
+            window.location.href = 'download-link.html';
+        });
+    </script>
+</body>
+</html>
