@@ -30,4 +30,4 @@ def update_sheet(question1, question2, question3, question4):
                                        .get('updatedCells')))
 
 # 测试数据
-update_sheet('Answer 1', 'Answer 2', 'Answer 3', 'Answer 4')
+update_sheet('Name', 'Email', 'Organization', 'Reason')
