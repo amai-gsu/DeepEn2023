@@ -12,7 +12,7 @@ def submit_survey():
     reason = request.form['Reason']
 
     # 调用 user-survey.py 中的函数将数据写入 Google 表格
-    user_survey.update_sheet(name, email, organization, reason)
+    update_sheet(name, email, organization, reason)
 
     # 重定向到下载页面
     return redirect('/download-link.html')
