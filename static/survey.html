@@ -38,7 +38,7 @@
 
             if (isFormComplete) {
                 // 发送数据到服务器
-                fetch('/submit-survey', {
+                fetch('http://127.0.0.1:5000/submit-survey', {
                     method: 'POST',
                     body: formData
                 }).then(response => {
