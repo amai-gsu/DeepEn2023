@@ -7,6 +7,13 @@
             width: 100%; /* 设置文本框宽度 */
             height: 100px; /* 设置文本框高度 */
         }
+
+        /* 设置 Name、Email 和 Organization 输入框宽度 */
+        input[name="Name"],
+        input[name="Email"],
+        input[name="Organization"] {
+            width: 50%; /* 设置输入框宽度为 100% */
+        }
     </style>
 </head>
 <body>
@@ -14,7 +21,7 @@
         <p>Name: <input type="text" name="Name"></p>
         <p>Email: <input type="text" name="Email"></p>
         <p>Organization: <input type="text" name="Organization"></p>
-        <p>Please explain the reason for download:</p>
+        <p>Please specify where and how you intend to utilize our datasets</p>
         <textarea name="Reason"></textarea> <!-- 更大的文本框 -->
         <button type="submit">Submit Survey</button>
     </form>
