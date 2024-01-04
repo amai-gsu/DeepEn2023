@@ -48,67 +48,29 @@
 </head>
 
 <body>
-    <h1>User Survey</h1> <!-- 添加标题并居中显示 -->
-    <form id="surveyForm">
-        <!-- 下划线样式的输入框 -->
+    <h1>User Survey</h1>
+    <!-- 使用 Formspree 的表单提交 -->
+    <form id="surveyForm" action="https://formspree.io/f/moqgqpda" method="POST">
         <div class="underline-input">
             <label for="Name">Name:</label>
-            <input type="text" id="Name" name="Name">
+            <input type="text" id="Name" name="Name" required>
         </div>
 
         <div class="underline-input">
             <label for="Email">Email:</label>
-            <input type="text" id="Email" name="Email">
+            <input type="email" id="Email" name="Email" required>
         </div>
 
         <div class="underline-input">
             <label for="Organization">Organization:</label>
-            <input type="text" id="Organization" name="Organization">
+            <input type="text" id="Organization" name="Organization" required>
         </div>
 
         <p>Please specify where and how you intend to utilize our datasets:</p>
-        <textarea name="Reason"></textarea> <!-- 保留原有的文本框 -->
+        <textarea name="Reason" required></textarea>
         <button type="submit">Submit Survey</button>
     </form>
 
-    <script>
-        document.getElementById('surveyForm').addEventListener('submit', function(e) {
-            console.log("表单正在提交");  // 调试信息
-            e.preventDefault();
-
-            // 检查所有字段是否已填写
-            var formData = new FormData(document.getElementById('surveyForm'));
-            var isFormComplete = true;
-
-            for (var [key, value] of formData.entries()) {
-                if (value.trim() === '') {
-                    alert(key + ' is required');
-                    isFormComplete = false;
-                    break;
-                }
-            }
-
-            if (isFormComplete) {
-                // 发送数据到服务器
-                fetch('http://127.0.0.1:5000/submit-survey', {
-                    method: 'POST',
-                    body: formData
-                }).then(response => {
-                    if (response.ok) {
-                        // 成功后跳转到下载页面
-                        window.location.href = 'http://127.0.0.1:5000/static/download-link.html';
-                    } else {
-                        alert('Failed to submit survey');
-                    }
-                }).catch(error => {
-                    console.error('Error:', error);
-                    alert('An error occurred');
-                });
-            }
-        });
-    </script>
-
-    <!-- 添加用户信息处理声明 -->
     <div id="userInformationStatement">
         <h3>User Information Processing Statement</h3>
         <p>Welcome to our website! We value your privacy and the protection of your personal information. When you use our services and submit personal information, we will process your information as follows:</p>
@@ -121,6 +83,5 @@
         <p>Contact Information: If you have any questions about how we process your personal information, please contact us at [xtu1@gsu.edu].</p>
         <p>By continuing to use our website, you acknowledge and agree to this statement.</p>
     </div>
-
 </body>
 </html>
