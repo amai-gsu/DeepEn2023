@@ -15,7 +15,7 @@ def submit_survey():
     update_sheet(name, email, organization, reason)
 
     # 重定向到下载页面
-    return redirect(url_for('static', filename='download-link.html'))
+    return redirect('/static/download-link')
 
 if __name__ == '__main__':
     app.run(debug=False)
