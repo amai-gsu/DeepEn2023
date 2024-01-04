@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect
+from flask import Flask, request, redirect, url_for
 from user_survey import update_sheet
 
 app = Flask(__name__)
@@ -15,8 +15,7 @@ def submit_survey():
     update_sheet(name, email, organization, reason)
 
     # 重定向到下载页面
-    return redirect('/static/download-link.html')
+    return redirect(url_for('static', filename='download-link.html'))
 
 if __name__ == '__main__':
-    # app.run(debug=True)  # 移除 debug=True 或将其设置为 False
-    app.run(host='0.0.0.0', port=5000)  # 添加 host='0.0.0.0' 来允许外部访问
+    app.run(debug=False)
