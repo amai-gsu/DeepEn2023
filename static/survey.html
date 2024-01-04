@@ -3,9 +3,12 @@
 <head>
     <title>Survey Page</title>
     <style>
-        textarea {
-            width: 100%; /* 设置文本框宽度 */
-            height: 100px; /* 设置文本框高度 */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
         }
 
         /* 设置 Name、Email 和 Organization 输入框宽度 */
@@ -13,6 +16,26 @@
         input[name="Email"],
         input[name="Organization"] {
             width: 50%; /* 设置输入框宽度为 100% */
+            font-size: 16px; /* 设置字体大小为16像素 */
+            font-weight: bold; /* 使用粗体字体 */
+        }
+
+        /* 下划线样式 */
+        input[name="Name"],
+        input[name="Email"],
+        input[name="Organization"],
+        textarea {
+            border: none;
+            border-bottom: 1px solid gray; /* 下划线样式 */
+            width: 100%;
+            font-size: 18px; /* 字体大小 */
+            font-style: italic; /* 使用斜体字体 */
+        }
+
+        /* 为下划线输入框添加一些间距 */
+        .underline-input,
+        textarea {
+            margin-bottom: 20px;
         }
 
         /* 修改用户信息处理声明的样式 */
@@ -23,7 +46,7 @@
             font-style: italic; /* 使用斜体字体 */
         }
 
-        h1 {
+        h3 {
             text-align: center; /* 让标题居中显示 */
         }
     </style>
@@ -32,9 +55,22 @@
 <body>
     <h1>User Survey</h1> <!-- 添加标题并居中显示 -->
     <form id="surveyForm">
-        <p>Name: <input type="text" name="Name"></p>
-        <p>Email: <input type="text" name="Email"></p>
-        <p>Organization: <input type="text" name="Organization"></p>
+        <!-- 下划线样式的输入框 -->
+        <div class="underline-input">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name">
+        </div>
+
+        <div class="underline-input">
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email">
+        </div>
+
+        <div class="underline-input">
+            <label for="Organization">Organization:</label>
+            <input type="text" id="Organization" name="Organization">
+        </div>
+
         <p>Please specify where and how you intend to utilize our datasets:</p>
         <textarea name="Reason"></textarea> <!-- 更大的文本框 -->
         <button type="submit">Submit Survey</button>
