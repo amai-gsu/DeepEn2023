@@ -15,26 +15,15 @@
         input[name="Name"],
         input[name="Email"],
         input[name="Organization"] {
-            width: 50%; /* 设置输入框宽度为 100% */
+            width: 50%; /* 设置输入框宽度为 50% */
             font-size: 16px; /* 设置字体大小为16像素 */
             font-weight: bold; /* 使用粗体字体 */
-        }
-
-        /* 下划线样式 */
-        input[name="Name"],
-        input[name="Email"],
-        input[name="Organization"],
-        textarea {
-            border: none;
+            border: none; /* 去掉输入框边框 */
             border-bottom: 1px solid gray; /* 下划线样式 */
-            width: 100%;
-            font-size: 18px; /* 字体大小 */
-            font-style: italic; /* 使用斜体字体 */
         }
 
         /* 为下划线输入框添加一些间距 */
-        .underline-input,
-        textarea {
+        .underline-input {
             margin-bottom: 20px;
         }
 
@@ -72,7 +61,7 @@
         </div>
 
         <p>Please specify where and how you intend to utilize our datasets:</p>
-        <textarea name="Reason"></textarea> <!-- 更大的文本框 -->
+        <textarea name="Reason"></textarea> <!-- 保留原有的文本框 -->
         <button type="submit">Submit Survey</button>
     </form>
 
