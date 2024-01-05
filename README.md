@@ -46,7 +46,22 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 | SqueezeNets  | 92.55 - 388.16                      | 34.55 - 134.65                      | 1486           |
 
 ## Application-level Dataset
-**Application-level dataset summary**. Application-level dataset illestrates the end-to-end energy consumption of six popular edge AI applications, covering three main categories: vision-based (object detection, image classification, super resolution, and image segmentation), NLP-based (natural language question answering), and voice-based applications (speech recognition).
+**Application-level dataset summary**. Application-level dataset demonstrates the end-to-end energy consumption of six popular edge AI applications, covering three main categories: vision-based (object detection, image classification, super resolution, and image segmentation), NLP-based (natural language question answering), and voice-based applications (speech recognition).
+| Category    | Application                 | No.  | Reference DNN models                      | CPU1 | CPU4 | GPU | NNAPI | Model size (MB) |
+|-------------|-----------------------------|------|-------------------------------------------|------|------|-----|-------|-----------------|
+| Vision-based| Image detection             | DNN1 | MobileNetv2, FP32, 300 x 300 pixels      | ✔️    |      | ✔️   |       | 24.2            |
+|             |                             | DNN2 | MobileNetv2, INT8, 300 x 300 pixels      | ✔️    |      | ✔️   |       | 6.9             |
+|             |                             | DNN3 | MobileNetv2, FP32, 640 x 640 pixels      | ✔️    |      | ✔️   |       | 12.3            |
+|             |                             | DNN4 | MobileNetv2, INT8, 640 x 640 pixels      | ✔️    |      | ✔️   |       | 4.5             |
+|             | Image classification        | DNN5 | EfficientNet, FP32, 224 x 224 pixels     | ✔️    |      | ✔️   |       | 18.6            |
+|             |                             | DNN6 | EfficientNet, INT8, 224 x 224 pixels     | ✔️    |      | ✔️   |       | 5.4             |
+|             |                             | DNN7 | MobileNetv1, FP32, 224 x 224 pixels      | ✔️    |      | ✔️   |       | 4.3             |
+|             |                             | DNN8 | MobileNetv1, INT8, 224 x 224 pixels      | ✔️    |      | ✔️   |       | 16.9            |
+|             | Super resolution            | DNN9 | ESRGAN [47], FP32, 50 x 50 pixels        |      |      |     |       | 5               |
+|             | Image segmentation          | DNN10| DeepLabv3 [12], FP32, 257 x 257 pixels   | ✔️    |      | ✔️   |       | 2.8             |
+| NLP-based   | Natural language question answering | DNN11 | MobileBERT [48], FP32                  | ✔️    |      |     | ✔️     | 100.7           |
+| Voice-based | Speech recognition          | DNN12| Conv-Actions-Frozen [49], FP32           |      |      | ✔️   |       | 3.8             |
+
 
 
 ## How to download the datasets
