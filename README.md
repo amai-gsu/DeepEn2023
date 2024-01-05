@@ -63,15 +63,35 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 | Voice-based | Speech recognition          | DNN12| Conv-Actions-Frozen, FP32           |      |      | ✔️   |       | 3.8             |
 
 ## How to download DeepEn2023 datasets
-- Go to our project website: https://amai-gsu.github.io/DeepEn2023/
-- Click "Data"
-- Submit the User Survey
-- After you submit the survey, a download link will appear
+- Go to our project website: https://amai-gsu.github.io/DeepEn2023/.
+- Click "Data".
+- Submit the User Survey.
+- After you submit the survey, a download link will appear.
 
 # How to use our pre-trained predictors to estimate the model's energy consumption
-Download pre-trained predictors by following the steps outlined in [How to download DeepEn2023 datasets](#how-to-download-deepen2023-datasets).
-
-
+- Download pre-trained predictors by following the steps outlined in [How to download DeepEn2023 datasets](#how-to-download-deepen2023-datasets).
+- Prepare the models you wish to predict. Ensure the models are in ONNX format. (The format is just for run the example)
+- Download the code: sec23_AIEnergy_onnx.py. You can find it in Prediction folder.
+- Remmber to change the path to your project location.
+```Bash
+def main():
+    opt = arg_parser()
+    # load predictor
+    predictor_name = opt.predictor
+    predictor_version = float(opt.version)
+    workplace = "/Users/xiaolong/Library/CloudStorage/Dropbox-GSUDropbox/Xiaolong_Tu/sec23_result/Dataset_P40p/Training/"
+    # workplace = "/home/haoxin/Downloads/Training/"
+    predictor_folder = os.path.join(workplace, opt.purpose, "predictor")
+    # print(predictor_folder)
+```
+- Run the command.
+```Bash
+python sec23_AIEnergy_onnx.py --predictor TestcortexA76cpu_tflite --version 1.0 --purpose Energy --modelpath Test_models/
+# TestcortexA76cpu_tflite. The folder for all the predictors.
+# --version 1.0. The predictor version, confirm it in predictors.yaml
+# --purpose Energy. Which one you want to predict. latency, power or energy.
+# --modelpath Test_models/. The path for the models which you wish to predict.
+```
 # How to use DeepEn2023 to train your own predictors
 
 # How to build your own energy consumption datasets
