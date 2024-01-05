@@ -29,6 +29,7 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 | fc  | 0.038 - 94.639 | - | 24 | - | 14.744 | (𝐶𝑖𝑛,𝐶𝑜𝑢𝑡 ) |
 | concat | 0.001 - 42.826 | 0.066 - 3.428 | 142 | 142 | 0 | (𝐻𝑊,𝐶𝑖𝑛1,𝐶𝑖𝑛2,𝐶𝑖𝑛3,𝐶𝑖𝑛4) |
 | others | 0.001 - 132.861 | 0.003 - 10.163 | 98 | 72 | - | (𝐻𝑊,𝐶𝑖𝑛) |
+* HW: Height/Weight, Cin: Channel Input, Cout: Channel Output, KS: Kernel Size, S: Stride *
 
 ## Model-level Dataset
 
