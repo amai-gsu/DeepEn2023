@@ -93,9 +93,9 @@ python sec23_AIEnergy_onnx.py --predictor TestcortexA76cpu_tflite --version 1.0 
 # --modelpath Test_models/. The path for the models which you wish to predict.
 ```
 # How to use DeepEn2023 to train your own predictors
-
+Coming soon by Jan. 31, 2024
 # How to build your own energy consumption datasets
-
+Coming soon by Jan. 31, 2024
 # ACKNOWLEDGMENTS
 
 This work was supported by funds from Toyota Motor North America and by the US National Science Foundation (NSF) under Grant No. 1910667, 1910891, and 2025284.
