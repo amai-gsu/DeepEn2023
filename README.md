@@ -32,6 +32,19 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 * HW: Height/Width, Cin: Channel Input, Cout: Channel Output, KS: Kernel Size, S: Stride
 
 ## Model-level Dataset
+**Model-level dataset summary**. Our model-level energy dataset includes nine SOTA DNN models. These models represent a mix of both manually-designed and NAS-derived models, each with distinct kernel types and configurations. For each model, we generate 50 variants for conducting power and energy measurements by re-sampling the 𝐶𝑜𝑢𝑡 and 𝐾𝑆 for each layer.
+| Models       | Energy Consumption (mJ) CPU min - max | Energy Consumption (mJ) GPU min - max | Avg. FLOPs (M) |
+|--------------|--------------------------------------|--------------------------------------|----------------|
+| AlexNets     | 36.97 - 355.58                      | 7.69 - 91.80                        | 815            |
+| DenseNets    | 231.93 - 488.87                     | 66.21 - 133.58                      | 1760           |
+| GoogleNets   | 145.03 - 262.45                     | 52.66 - 90.04                       | 1535           |
+| MobileNetv1s | 53.59 - 136.79                      | 17.36 - 42.44                       | 519            |
+| MobileNetv2s | 30.85 - 175.07                      | 8.81 - 48.35                        | 419            |
+| ProxylessNas | 58.34 - 162.11                      | 17.70 - 49.29                       | 526            |
+| ResNet18s    | 251.52 - 1432.67                    | 64.19 - 391.97                      | 3888           |
+| ShuffleNetv2s| 25.26 - 81.41                       | -                                    | 319            |
+| SqueezeNets  | 92.55 - 388.16                      | 34.55 - 134.65                      | 1486           |
+
 
 ## Application-level Dataset
 
