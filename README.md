@@ -12,7 +12,7 @@ If you find our paper and dataset useful for your work please cite:
 ```
 Explore more details at our website: (https://amai-gsu.github.io/DeepEn2023/)  
 
-# DeepEn 2023 Energy Dataset
+# DeepEn2023 Energy Datasets
 DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, and application-level.
 
 
@@ -62,13 +62,15 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 | NLP-based   | Natural language question answering | DNN11 | MobileBERT, FP32                  | ✔️    |      |     | ✔️     | 100.7           |
 | Voice-based | Speech recognition          | DNN12| Conv-Actions-Frozen, FP32           |      |      | ✔️   |       | 3.8             |
 
-## How to download the datasets
+## How to download DeepEn2023 datasets
 - Go to our project website: https://amai-gsu.github.io/DeepEn2023/
 - Click "Data"
 - Submit the User Survey
 - After you submit the survey, a download link will appear
 
-# How to use our pre-trained predictor to estimate the model's energy consumption
+# How to use our pre-trained predictors to estimate the model's energy consumption
+Download pre-trained predictors follow the previous step [How to download DeepEn2023 datasets](#How to download DeepEn2023 datasets)
+
 
 # How to use DeepEn2023 to train your own predictors
 
