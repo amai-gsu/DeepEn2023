@@ -45,8 +45,11 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 | ShuffleNetv2s| 25.26 - 81.41                       | -                                    | 319            |
 | SqueezeNets  | 92.55 - 388.16                      | 34.55 - 134.65                      | 1486           |
 
-
 ## Application-level Dataset
+**Application-level dataset summary**. Application-level dataset illestrates the end-to-end energy consumption of six popular edge AI applications, covering three main categories: vision-based (object detection, image classification, super resolution, and image segmentation), NLP-based (natural language question answering), and voice-based applications (speech recognition).
+
+
+## How to download the datasets
 
 # How to use our pre-trained predictor to estimate the model's energy consumption
 
