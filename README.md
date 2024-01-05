@@ -17,7 +17,7 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 
 
 ## Kernel-level Dataset
-**Kernel-level dataset summary**. We generate thousands of kernel models
+**Kernel-level dataset summary**. We generate thousands of kernel models, deploy them into different edge devices, measure the energy consumption during the model execution. The number of kernels is based on how often this kernel appears in models. 
 | Kernels | CPU Energy Consumption min - max (mJ)| GPU Energy Consumption min - max (mJ)| # Measured kernels(CPU) | # Measured kernels(GPU) | Avg. FLOPs(M) | Configurations |
 |---------|---------------------------------------|---------------------------------------|-----------------------|-----------------------|----------------|----------------|
 | conv++bn++relu | 0.002 - 1200.083 | 0.002 - 120.152 | 1032 | 1032 | 250.137 | (𝐻𝑊,𝐶𝑖𝑛,𝐶𝑜𝑢𝑡 ,𝐾𝑆, 𝑆) |
