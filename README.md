@@ -10,6 +10,18 @@ If you find our paper and dataset useful for your work please cite:
   year      = {2023},
 }
 ```
+# DeepEn 2023 Energy Dataset
+DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, and application-level.
+
+## Kernel-level Dataset
+
+## Model-level Dataset
+
+## Application-level Dataset
+
+# How to use our pre-trained predictor to predict the model's energy consumption
+
+# How to use our datasets to train your own predictor
 
 # ACKNOWLEDGMENTS
 
