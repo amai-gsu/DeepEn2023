@@ -10,8 +10,11 @@ If you find our paper and dataset useful for your work please cite:
   year      = {2023},
 }
 ```
+Explore more details at our website: (https://amai-gsu.github.io/DeepEn2023/)  
+
 # DeepEn 2023 Energy Dataset
 DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, and application-level.
+
 
 ## Kernel-level Dataset
 
