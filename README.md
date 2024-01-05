@@ -57,10 +57,10 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 |             |                             | DNN6 | EfficientNet, INT8, 224 x 224 pixels     | ✔️    |      | ✔️   |       | 5.4             |
 |             |                             | DNN7 | MobileNetv1, FP32, 224 x 224 pixels      | ✔️    |      | ✔️   |       | 4.3             |
 |             |                             | DNN8 | MobileNetv1, INT8, 224 x 224 pixels      | ✔️    |      | ✔️   |       | 16.9            |
-|             | Super resolution            | DNN9 | ESRGAN [47], FP32, 50 x 50 pixels        |      |      |     |       | 5               |
-|             | Image segmentation          | DNN10| DeepLabv3 [12], FP32, 257 x 257 pixels   | ✔️    |      | ✔️   |       | 2.8             |
-| NLP-based   | Natural language question answering | DNN11 | MobileBERT [48], FP32                  | ✔️    |      |     | ✔️     | 100.7           |
-| Voice-based | Speech recognition          | DNN12| Conv-Actions-Frozen [49], FP32           |      |      | ✔️   |       | 3.8             |
+|             | Super resolution            | DNN9 | ESRGAN, FP32, 50 x 50 pixels        |      |      |     |       | 5               |
+|             | Image segmentation          | DNN10| DeepLabv3, FP32, 257 x 257 pixels   | ✔️    |      | ✔️   |       | 2.8             |
+| NLP-based   | Natural language question answering | DNN11 | MobileBERT, FP32                  | ✔️    |      |     | ✔️     | 100.7           |
+| Voice-based | Speech recognition          | DNN12| Conv-Actions-Frozen, FP32           |      |      | ✔️   |       | 3.8             |
 
 
 
