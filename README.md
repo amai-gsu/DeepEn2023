@@ -18,11 +18,12 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 
 ## Kernel-level Dataset
 
+<small>
 | Kernels | Energy Consumption (mJ) CPU min - max | Energy Consumption (mJ) GPU min - max | # Measured kernels CPU | # Measured kernels GPU | Avg. FLOPs (M) | Configurations |
 |---------|---------------------------------------|---------------------------------------|-----------------------|-----------------------|----------------|----------------|
-| conv+bn+relu | 0.002 - 1200.083 | 0.002 - 120.152 | 1032 | 1032 | 250.137 | (HW, C_in, C_out, KS, S) |
+| conv+bn+relu | 0.002 - 1200.083 | 0.002 - 120.152 | 1032 | 1032 | 250.137 | (𝐻𝑊,𝐶𝑖𝑛,𝐶𝑜𝑢𝑡 ,𝐾𝑆, 𝑆) |
 | dwconv+bn+relu | 0.022 - 222.609 | 0.016 - 0.658 | 349 | 349 | 28.364 | (𝐻𝑊,𝐶𝑖𝑛,𝐾𝑆, 𝑆) |
-
+</small>
 
 ## Model-level Dataset
 
