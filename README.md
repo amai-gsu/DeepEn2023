@@ -71,10 +71,10 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 (Currently, we have only uploaded kernel-level dataset. we will upload other datasets later.)
 
 # How to use our pre-trained predictors to estimate the model's energy consumption
-- Download pre-trained predictors by following the steps outlined in [How to download DeepEn2023 datasets](#how-to-download-deepen2023-datasets).
-- Prepare the models you wish to predict. Ensure the models are in ONNX format (The format is just for run the example). We provide test models in **Model_test** folder.
-- Download the code: **sec23_AIEnergy_onnx.py**. You can find it in Prediction folder.
-- Remmber to change the path to your project location.
+- Download the pre-trained predictors by following the steps outlined in [How to download DeepEn2023 datasets](#how-to-download-deepen2023-datasets).
+- Prepare the models you wish to predict. The models should be in either ONNX or PB format. We have provided test models in **Model_test** folder.
+- Download the script: **sec23_AIEnergy_onnx.py**. which can be found in **Prediction** folder.
+- Remember to change the file path to your project's location.
 ```Bash
 def main():
     opt = arg_parser()
