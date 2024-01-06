@@ -68,7 +68,7 @@ DeepEn2023 includes three levels of energy dataset: kernel-level, model-level, a
 - Submit the User Survey.
 - After you submit the survey, a download link will appear.
 
-(Currently, we only uploaded kernel-level dataset. Will upload other datasets later.)
+(Currently, we have only uploaded kernel-level dataset. we will upload other datasets later.)
 
 # How to use our pre-trained predictors to estimate the model's energy consumption
 - Download pre-trained predictors by following the steps outlined in [How to download DeepEn2023 datasets](#how-to-download-deepen2023-datasets).
